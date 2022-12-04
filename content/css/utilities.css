@@ -1,0 +1,31 @@
+.bg-main-clr {background-color: var(--main-clr)}
+.bg-main-clr-light {background-color: var(--main-clr-light)}
+.bg-accent-clr {background-color: var(--accent-clr)}
+.text-main-clr {color: var(--main-clr) !important}
+.text-accent-clr {color: var(--accent-clr)}
+.section-padding {padding: 50px 0}
+.pointer {cursor: pointer}
+
+.section-heading {
+    font-size: clamp(1.2rem, 9vw, var(--fs-section-heading));
+    color: var(--main-clr);
+    font-weight: bold;
+}
+
+.btn-hover:hover {
+    background-color: var(--main-clr-dark);
+    color: white !important
+}
+
+.btn-accent-hover:hover {background-color: var(--accent-clr)}
+
+.btn {
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.an-duration{
+    -webkit-animation-duration: var(--animation-duration);
+            animation-duration: var(--animation-duration);
+}

@@ -1,0 +1,6 @@
+/* Start Welcome */
+@media screen and (max-width:992px) {.welcome{background-image: none !important}}
+@media screen and (max-width:992px) {
+    .welcome{height:80vh;}
+}
+/* End Welcome */

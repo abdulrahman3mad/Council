@@ -1,0 +1,184 @@
+/* 
+    --Map--
+    01: Veriables 
+    02: Utilities
+    03: Upper-bar
+    04: Navbar
+    05: Welcome Sec
+    06: Our-Plans
+    07: Notice Paragraph
+    08: Course Features
+    09: Account Types
+    10: Common Questions
+    11: Contact Us
+    12: Footer
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url("./media.css");
+@import url("./utilities.css");
+
+/* Start General Style*/
+:root {
+    --main-clr: #173D6A;
+    --main-clr-dark: #0f294a;
+    --main-clr-light: #1e68c29e;
+    --accent-clr: #FFE300;
+    --logo-width: 70px;
+    --light-gray: #DEDEDE;
+    --dark-gray: #5a5a5a;
+
+    --ff-primary: 'Ubuntu', sans-serif;
+    --ff-secondary: 'Josefin Sans', sans-serif;
+
+    --fs-section-heading: 2.4rem;
+    --animation-duration:0.9s;
+}
+
+body {font-family: var(--ff-primary)}
+a {text-decoration: none}
+img {max-width: 100%}
+
+/* End General Style*/
+
+/* Start Upper-bar Style */
+.upper-bar .login img {width: 14px}
+/* End Upper-bar Style */
+
+/* Start Nav Style */
+header {z-index: 5;}
+nav .logo img {width: 80px;}
+nav .english-bar {border-radius: 0 0 40px 0;}
+/* End Nav Style */
+
+/* Start Welcome */
+.welcome {
+    top: -80px;
+    height: 92vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-clr);
+    background-image: url("../assets/imgs/welcome/welcome.png");
+    -webkit-animation-name: backgroundFadeIn;
+            animation-name: backgroundFadeIn;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.welcome .sale::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 60px;
+    top: 100%;
+    left: 0;
+}
+
+.welcome .sale {font-size: clamp(0.8rem, 5vw, 1.5rem)}
+.welcome-header {font-size: clamp(1.5rem, 8vw, 2.7rem)}
+
+.welcome .welcome-desc {
+    font-size: clamp(0.9rem, 5vw, 1.5rem);
+    line-height: 1.3;
+}
+/* End Welcome */
+
+/* Start Our Plan */
+.our-plans .discount-btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.our-plans .card {
+    -webkit-box-shadow: 6px 3px 13px 4px rgb(171 182 185 / 30%) !important;
+    box-shadow: 6px 3px 13px 4px rgb(171 182 185 / 30%) !important
+}
+
+.our-plans .per-month-span {font-size: 0.9rem}
+
+.our-plans .card-header,
+.our-plans .card-body {
+    border-radius: 15px 15px 0 0
+}
+
+.our-plans .btn {padding: 1vw 6vw}
+
+.our-plans .plans {display: none}
+
+.our-plans .plans.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+/* End Our Plan */
+
+/* Start Notice */
+.notice {font-size: 0.7rem}
+/* End Notice */
+
+/* Start Course Features */
+.course-features .features img {width: 17px}
+/* End Course Features */
+
+/* Start Accounts */
+.accounts-type .accounts .account img{height: 276px}
+/* End Accounts */
+
+/* Start Common Questions */
+.common-questions .accordion .accordion-item {border-radius: 15px}
+
+.common-questions .accordion .accordion-button {
+    -webkit-transition: background-color 0.7s;
+    -o-transition: background-color 0.7s;
+    transition: background-color 0.7s
+}
+
+.common-questions .accordion .accordion-item .accordion-button:not(.collapsed) {
+    background-color: var(--main-clr);
+    border: none;
+    color: white;
+}
+
+.common-questions .accordion .accordion-item .accordion-button:not(.collapsed) {border-radius: 15px 15px 0 0}
+
+.common-questions .accordion .accordion-button {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color: var(--main-clr-light);
+    color: black;
+    border-radius: 15px;
+}
+
+/* End Common Questions */
+
+/* Start Contact Us */
+.contact-us .img-box img {-o-object-fit: cover; object-fit: cover}
+/* End Contact Us */
+
+/* Start Footer */
+footer .logo {width: 70px}
+
+footer .info {
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+footer .login-btn img {width: 20px}
+footer li a {color: var(--accent-clr)}
+footer ul li:hover a {text-decoration: underline; color:white}
+footer ul:not(:first-child) li {font-size: 0.7rem;}
+footer ul:not(:first-child) li a {color: white}
+
+footer li:not(:last-child)::after {
+    color: var(--accent-clr);
+    content: "|";
+    margin: 8px
+}
+/* End Footer */
