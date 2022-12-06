@@ -1,6 +1,35 @@
-/* Start Welcome */
-@media screen and (max-width:992px) {.welcome{background-image: none !important}}
-@media screen and (max-width:992px) {
-    .welcome{height:80vh;}
+/* Start Navbar */
+@media screen and (min-width:576px) {
+    nav .level-name {
+        border-radius: 0 0 40px 0;
+    }
 }
+
+@media screen and (max-width:576px) {
+    nav .level-name {
+        background-color: rgba(245, 245, 245, 0.80) !important
+    }
+}
+
+/* End Navbar */
+
+/* Start Welcome */
+@media screen and (max-width:992px) {
+    .welcome {
+        background-image: none !important
+    }
+}
+
+@media screen and (min-width:576px) {
+    .welcome {
+        top: -80px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .welcome {
+        height: 80vh;
+    }
+}
+
 /* End Welcome */
