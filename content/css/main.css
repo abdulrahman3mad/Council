@@ -48,7 +48,7 @@ img {max-width: 100%}
 /* Start Nav Style */
 header {z-index: 5;}
 nav .logo img {width: 80px;}
-nav .english-bar {border-radius: 0 0 40px 0;}
+nav .level-name {border-radius: 0 0 40px 0;}
 /* End Nav Style */
 
 /* Start Welcome */
