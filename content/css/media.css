@@ -19,17 +19,4 @@
         background-image: none !important
     }
 }
-
-@media screen and (min-width:576px) {
-    .welcome {
-        top: -80px;
-    }
-}
-
-@media screen and (max-width:992px) {
-    .welcome {
-        height: 80vh;
-    }
-}
-
 /* End Welcome */

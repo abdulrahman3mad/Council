@@ -42,17 +42,21 @@ img {max-width: 100%}
 
 /* Start Upper-bar Style */
 .upper-bar .login img {width: 14px}
+.upperBar{
+    transform: var(--animation-duration);
+}
 /* End Upper-bar Style */
 
 /* Start Nav Style */
-header {z-index: 5;}
+header {z-index: 5; position: fixed;}
 nav .logo img {width: 80px;}
 nav .level-name {font-size: 2.5rem}
 /* End Nav Style */
 
 /* Start Welcome */
 .welcome {
-    height: 92vh;
+    height: 98vh;
+    padding:70px 0 50px 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

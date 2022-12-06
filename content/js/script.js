@@ -7,5 +7,3 @@ toggleCheckBox.addEventListener("click", function () {
     NonTrialsPlans.classList.toggle("active")
     Array.from(NonTrialsPlans.querySelectorAll(".plan")).forEach((plan)=> plan.classList.add("wow"))
 })
-
-
