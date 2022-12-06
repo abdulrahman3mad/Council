@@ -47,7 +47,7 @@ img {max-width: 100%}
 /* Start Nav Style */
 header {z-index: 5;}
 nav .logo img {width: 80px;}
-nav .level-name {font-size: clamp(2.1rem, 8vw, 2.8rem) !important}
+nav .level-name {font-size: 2.5rem}
 /* End Nav Style */
 
 /* Start Welcome */
